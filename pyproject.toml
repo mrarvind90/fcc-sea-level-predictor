@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fcc-sea-level-predictor"
+version = "1.0.0"
+description = "A Python program to analyze the global average sea level since 1880, and predict the sea level growth at 2050. "
+authors = ["Arvindran Kalidas <arvindrankalidas@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+pandas = "^2.1.1"
+scipy = "^1.11.3"
+matplotlib = "^3.8.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
